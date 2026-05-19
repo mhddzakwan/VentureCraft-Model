@@ -8,3 +8,4 @@ joblib
 python-multipart
 h5py
 groq
+python-dotenv 
