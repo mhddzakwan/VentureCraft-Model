@@ -8,7 +8,7 @@ import joblib
 import os
 
 from groq import Groq
-load_dotenv()
+
 # ==========================================
 # LOAD MODEL
 # ==========================================
@@ -25,9 +25,7 @@ encoder = joblib.load("encoder.pkl")
 # GROQ CLIENT
 # ==========================================
 
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
+api_key = os.environ.get("GROQ_API_KEY")
 
 # ==========================================
 # FASTAPI
